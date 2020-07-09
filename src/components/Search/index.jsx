@@ -1,12 +1,9 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import './Search.css';
 import { getCityRestaurants, setRefineText } from '../../actions';
 
-const Search = ({
-  getCityRestaurants,
-  setRefineText,
-  refineText,
-}) => {
+const Search = ({ getCityRestaurants, setRefineText, refineText }) => {
   const handleCityChange = (event) => {
     const {
       target: { value },
@@ -26,19 +23,15 @@ const Search = ({
   };
 
   return (
-    <>
-      <input
-        type="text"
-        placeholder="City"
-        onChange={handleCityChange}
-      />
+    <div className="search-container">
+      <input type="text" placeholder="City" onChange={handleCityChange} />
       <input
         type="text"
         placeholder="Refine"
         defaultValue={refineText}
         onChange={handleRefineChange}
       />
-    </>
+    </div>
   );
 };
 
