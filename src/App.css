@@ -45,3 +45,15 @@ body {
     display: block;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  html {
+    font-size: 40%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  html {
+    font-size: 35%;
+  }
+}
