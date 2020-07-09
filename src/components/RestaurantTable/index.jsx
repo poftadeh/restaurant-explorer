@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import './RestaurantTable.css';
 
-const RestaurantTable = ({ restaurants, refineText }) => {
+export const RestaurantTable = ({ restaurants, refineText }) => {
   if (restaurants?.length > 0) {
     const refineRegExp = new RegExp(refineText, 'i');
     return (

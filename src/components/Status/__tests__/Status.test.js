@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Status from '../index';
+import { Status } from '../index';
 
 it('renders <Status /> properly', () => {
   const wrapper = shallow(<Status />);

@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import './Search.css';
 import { getCityRestaurants, setRefineText } from '../../actions';
 
-const Search = ({ getCityRestaurants, setRefineText, refineText }) => {
+export const Search = ({ getCityRestaurants, setRefineText, refineText }) => {
   const handleCityChange = (event) => {
     const {
       target: { value },

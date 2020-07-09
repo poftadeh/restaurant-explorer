@@ -4,7 +4,7 @@ import './Status.css';
 import Food from './images/food.svg';
 import NoData from './images/no-data.svg';
 
-const Status = ({ restaurants }) => {
+export const Status = ({ restaurants }) => {
   if (!Array.isArray(restaurants)) {
     return <img className="status-image" src={Food} alt="Plate of Food" />;
   }

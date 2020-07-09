@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders <Search /> properly 1`] = `
+<div
+  className="search-container"
+>
+  <input
+    onChange={[Function]}
+    placeholder="City"
+    type="text"
+  />
+  <input
+    onChange={[Function]}
+    placeholder="Refine"
+    type="text"
+  />
+</div>
+`;
