@@ -2,12 +2,12 @@
   height: 80%;
   width: 100%;
   overflow: auto;
-  border-radius: 4px;
 }
 
 .restaurant-table {
   overflow: auto;
   width: 100%;
+  border-collapse: collapse;
 }
 
 th {
@@ -16,7 +16,6 @@ th {
   color: #fff;
   padding: 0.5rem;
   background-color: #5661b3;
-  border-radius: 4px;
 }
 
 td {
