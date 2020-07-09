@@ -1,7 +1,5 @@
 import { GET_RESTAURANTS, SET_REFINE_TEXT } from './types';
 
-const API_LINK = 'http://opentable.herokuapp.com/api/';
-
 export const getCityRestaurants = (cityName) => async (dispatch) => {
   console.log('in get city: ', cityName);
   if (!cityName) {
@@ -10,7 +8,7 @@ export const getCityRestaurants = (cityName) => async (dispatch) => {
   }
 
   try {
-    const res = await fetch(`${API_LINK}restaurants?city=${cityName}`);
+    const res = await fetch(`/restaurants?city=${cityName}`);
     const data = await res.json();
     const formattedData = data.restaurants.map(
       ({ name, area, address, price }) => ({

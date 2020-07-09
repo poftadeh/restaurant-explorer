@@ -2,10 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 const RestaurantTable = ({ restaurants, refineText }) => {
-  const refineRegExp = new RegExp(refineText, 'i');
-  console.log({ refineRegExp });
-
   if (restaurants?.length > 0) {
+    const refineRegExp = new RegExp(refineText, 'i');
+    console.log({ refineRegExp });
     return restaurants
       .filter(({ name, address, area }) => {
         return (
