@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { getCityRestaurants } from '../../actions';
+import { getCityRestaurants, setRefineText } from '../../actions';
 
-const Search = ({ getCityRestaurants, dispatch }) => {
-  const [city, setCity] = useState('');
-  const [refineText, setRefineText] = useState('');
-
+const Search = ({
+  getCityRestaurants,
+  setRefineText,
+  refineText,
+}) => {
   const handleCityChange = (event) => {
     const {
       target: { value },
     } = event;
 
     getCityRestaurants(value);
-    setCity(value);
     console.log({ value });
   };
 
@@ -30,13 +30,12 @@ const Search = ({ getCityRestaurants, dispatch }) => {
       <input
         type="text"
         placeholder="City"
-        value={city}
         onChange={handleCityChange}
       />
       <input
         type="text"
         placeholder="Refine"
-        value={refineText}
+        defaultValue={refineText}
         onChange={handleRefineChange}
       />
     </>
@@ -45,6 +44,9 @@ const Search = ({ getCityRestaurants, dispatch }) => {
 
 const mapStateToProps = (state) => ({
   restaurants: state.restaurants.restaurants,
+  refineText: state.restaurants.refineText,
 });
 
-export default connect(mapStateToProps, { getCityRestaurants })(Search);
+export default connect(mapStateToProps, { getCityRestaurants, setRefineText })(
+  Search,
+);
