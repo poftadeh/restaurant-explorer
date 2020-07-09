@@ -1,3 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders <Heading /> properly 1`] = `ShallowWrapper {}`;
+exports[`renders <Heading /> properly 1`] = `
+<header>
+  <h1
+    className="main-heading"
+  >
+    Restaurant Explorer
+  </h1>
+  <h2
+    className="sub-heading"
+  >
+    Find Delicious Food Near You.
+  </h2>
+</header>
+`;
