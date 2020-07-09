@@ -7,6 +7,7 @@
   ],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/prop-types": "off",
     "import/extensions": 0
   },
   "settings": {
