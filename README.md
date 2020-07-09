@@ -1,68 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Restaurant Explorer
 
-## Available Scripts
+Finds restaurants in a given city.
 
-In the project directory, you can run:
+![Alt text](resources/demo-image.png 'Title')
 
-### `npm start`
+## Technical Questions
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+1. I spent approximately 4 hours on the coding test. What I would do differently is to add more UI/UX features: animations, alerts, as well as increase the robustness of the testing suites. Though the project has a linter, I would also consider migrating this application in TypeScript to add further type safety. I've found this type of migration quite useful in past projects.
+2. The nullish coalescing operator. This returns the left-hand side operand if it is not `null` or `undefined`. Example: `const foo = null ?? "default value";`
+3. One way to track down performance issues is to use a profiler. There are profilers built in to the dev tools of both Chrome and Firefox browsers, as well as the React Developer Tools plugin. If the performance issue was introduced in an unknown commit, a `git bisect` operation can be conducted to discover when it was introduced. I have had to use this method in production when working on a frontend touchscreen application for a medical imaging device.
+4. The endpoint as utilized is delivering a large payload that mostly goes unused. I would look into how this could be improved to only fetch the data relevant to the application.
+5. ```json
+   {
+     "firstName": "Pouya",
+     "lastName": "Oftadeh",
+     "title": "Full Stack Developer",
+     "technicalSkills": ["React", "Redux", "TypeScript", "Node.js"],
+     "isAnsweringAQuestion": true
+   }
+   ```
