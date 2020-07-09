@@ -4,6 +4,8 @@ Finds restaurants in a given city.
 
 ![Alt text](resources/demo-image.png 'Title')
 
+### [Click Here To See A Demo](https://poftadeh.github.io/restaurant-explorer/)
+
 ## Technical Questions
 
 1. I spent approximately 4 hours on the coding test. What I would do differently is to add more UI/UX features: animations, alerts, as well as increase the robustness of the testing suites. Though the project has a linter, I would also consider migrating this application in TypeScript to add further type safety. I've found this type of migration quite useful in past projects.
