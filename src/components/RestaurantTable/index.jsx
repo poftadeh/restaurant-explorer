@@ -6,16 +6,16 @@ export const RestaurantTable = ({ restaurants, refineText }) => {
   if (restaurants?.length > 0) {
     const refineRegExp = new RegExp(refineText, 'i');
     return (
-      <div className="table-container">
-        <table className="restaurant-table">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Area</th>
-              <th>Address</th>
-              <th>Price</th>
-            </tr>
-          </thead>
+      <table className="restaurant-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Area</th>
+            <th>Address</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
           {restaurants
             .filter(({ name, address, area }) => {
               return (
@@ -33,9 +33,9 @@ export const RestaurantTable = ({ restaurants, refineText }) => {
                   <td>{price}</td>
                 </tr>
               );
-            })}
-        </table>
-      </div>
+            })}{' '}
+        </tbody>
+      </table>
     );
   }
 

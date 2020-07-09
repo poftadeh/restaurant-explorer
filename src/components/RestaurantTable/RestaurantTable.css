@@ -1,12 +1,14 @@
-.table-container {
+/* .table-container {
   height: 80%;
   width: 100%;
   overflow: auto;
-}
+} */
 
 .restaurant-table {
-  overflow: auto;
-  width: 100%;
+  display: inline-block;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90%;
   border-collapse: collapse;
 }
 
