@@ -1,0 +1,12 @@
+.status-image {
+  padding: 0 2rem;
+  height: 70%;
+  width: 80%;
+  object-fit: contain;
+}
+
+.no-data-text {
+  color: #606f7b;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}

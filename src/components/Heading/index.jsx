@@ -4,7 +4,8 @@ import './Heading.css';
 const Heading = () => {
   return (
     <header>
-      <h1 className="main-heading">Restaurant Finder</h1>
+      <h1 className="main-heading">Restaurant Explorer</h1>
+      <h2 className="sub-heading">Find Delicious Food Near You.</h2>
     </header>
   );
 };

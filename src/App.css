@@ -10,9 +10,26 @@ html {
   font-size: 62.5%;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   line-height: 1.7;
   background-color: #b2b7ff;
-  padding: 10rem 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 2rem;
+  height: 50rem;
 }

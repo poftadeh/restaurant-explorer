@@ -7,13 +7,17 @@ import Container from './components/Container';
 import Search from './components/Search';
 import Heading from './components/Heading';
 import RestaurantTable from './components/RestaurantTable';
+import Status from './components/Status';
 
 const App = () => (
   <Provider store={store}>
     <Container>
       <Heading />
       <Search />
-      <RestaurantTable />
+      <section className="results">
+        <RestaurantTable />
+        <Status />
+      </section>
     </Container>
   </Provider>
 );

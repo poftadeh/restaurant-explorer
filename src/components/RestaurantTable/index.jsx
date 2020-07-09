@@ -40,7 +40,7 @@ const RestaurantTable = ({ restaurants, refineText }) => {
     );
   }
 
-  return <p>No results found.</p>;
+  return null;
 };
 
 const mapStateToProps = (state) => ({
