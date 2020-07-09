@@ -7,7 +7,9 @@ export const getCityRestaurants = (cityName) => async (dispatch) => {
   }
 
   try {
-    const res = await fetch(`/restaurants?city=${cityName}`);
+    const res = await fetch(
+      `http://opentable.herokuapp.com/api/restaurants?city=${cityName}`,
+    );
     const data = await res.json();
     const formattedData = data.restaurants.map(
       ({ name, area, address, price }) => ({

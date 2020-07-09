@@ -61,6 +61,5 @@
       "enzyme-to-json/serializer"
     ]
   },
-  "proxy": "http://opentable.herokuapp.com/api/",
   "homepage": "http://poftadeh.github.io/restaurant-explorer"
 }

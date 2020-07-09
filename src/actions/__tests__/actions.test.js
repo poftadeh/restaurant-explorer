@@ -17,10 +17,13 @@ describe('actions', () => {
       { name: 'foo', address: 'bar', area: 'baz', price: 3 },
     ];
 
-    fetchMock.getOnce('/restaurants?city=Toronto', {
-      body: { restaurants: mockedRestaurants },
-      headers: { 'content-type': 'application/json' },
-    });
+    fetchMock.getOnce(
+      'http://opentable.herokuapp.com/api/restaurants?city=Toronto',
+      {
+        body: { restaurants: mockedRestaurants },
+        headers: { 'content-type': 'application/json' },
+      },
+    );
 
     const expectedActions = [
       { type: GET_RESTAURANTS, payload: mockedRestaurants },
