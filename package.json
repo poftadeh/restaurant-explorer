@@ -43,6 +43,7 @@
     "fetch-mock": "^9.10.3",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
+    "node-fetch": "^2.6.0",
     "prettier": "^2.0.5",
     "redux-mock-store": "^1.5.4"
   },
