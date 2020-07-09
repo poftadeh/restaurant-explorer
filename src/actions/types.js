@@ -1,2 +1,0 @@
-export const GET_RESTAURANTS = 'GET_RESTAURANTS';
-export const SET_REFINE_TEXT = 'SET_REFINE_TEXT';

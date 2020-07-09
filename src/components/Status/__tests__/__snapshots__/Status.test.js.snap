@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders <Status /> properly 1`] = `
-<img
-  alt="Plate of Food"
-  className="status-image"
-  src="food.svg"
-/>
-`;
