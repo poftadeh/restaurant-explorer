@@ -5,7 +5,6 @@ import './RestaurantTable.css';
 const RestaurantTable = ({ restaurants, refineText }) => {
   if (restaurants?.length > 0) {
     const refineRegExp = new RegExp(refineText, 'i');
-    console.log({ refineRegExp });
     return (
       <div className="table-container">
         <table className="restaurant-table">

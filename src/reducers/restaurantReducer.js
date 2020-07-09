@@ -6,7 +6,6 @@ const initialState = {
 };
 
 export default (state = initialState, action) => {
-  console.log('Dispatched Action:', action);
   switch (action.type) {
     case GET_RESTAURANTS:
       return {

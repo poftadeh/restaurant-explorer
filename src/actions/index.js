@@ -1,7 +1,6 @@
 import { GET_RESTAURANTS, SET_REFINE_TEXT } from './types';
 
 export const getCityRestaurants = (cityName) => async (dispatch) => {
-  console.log('in get city: ', cityName);
   if (!cityName) {
     dispatch({ type: GET_RESTAURANTS, payload: [] });
     return;

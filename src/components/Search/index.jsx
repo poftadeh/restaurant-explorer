@@ -10,7 +10,6 @@ const Search = ({ getCityRestaurants, setRefineText, refineText }) => {
     } = event;
 
     getCityRestaurants(value);
-    console.log({ value });
   };
 
   const handleRefineChange = (event) => {
@@ -19,7 +18,6 @@ const Search = ({ getCityRestaurants, setRefineText, refineText }) => {
     } = event;
 
     setRefineText(value);
-    console.log({ value });
   };
 
   return (
