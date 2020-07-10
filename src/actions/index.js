@@ -21,6 +21,7 @@ export const getCityRestaurants = (cityName) => async (dispatch) => {
     );
     dispatch({ type: GET_RESTAURANTS, payload: formattedData });
   } catch (err) {
+    // eslint-disable-next-line no-console
     console.error(err);
   }
 };

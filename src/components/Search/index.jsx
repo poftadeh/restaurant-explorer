@@ -22,13 +22,25 @@ export const Search = ({ getCityRestaurants, setRefineText, refineText }) => {
 
   return (
     <div className="search-container">
-      <input type="text" placeholder="City" onChange={handleCityChange} />
-      <input
-        type="text"
-        placeholder="Refine"
-        defaultValue={refineText}
-        onChange={handleRefineChange}
-      />
+      <label htmlFor="city">
+        <span className="label-text">City</span>
+        <input
+          type="text"
+          id="city"
+          className="search-input"
+          onChange={handleCityChange}
+        />
+      </label>
+      <label htmlFor="refine-text">
+        <span className="label-text">Refine</span>
+        <input
+          type="text"
+          id="refine-text"
+          defaultValue={refineText}
+          onChange={handleRefineChange}
+          className="search-input"
+        />
+      </label>
     </div>
   );
 };

@@ -33,7 +33,7 @@ export const RestaurantTable = ({ restaurants, refineText }) => {
                   <td>{price}</td>
                 </tr>
               );
-            })}{' '}
+            })}
         </tbody>
       </table>
     );

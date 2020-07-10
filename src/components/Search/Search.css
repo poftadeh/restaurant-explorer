@@ -4,7 +4,8 @@
   margin-top: 3rem;
 }
 
-input {
+.search-input {
+  width: 25rem;
   padding: 1rem;
   font-size: 1.75rem;
   font-family: inherit;
@@ -14,6 +15,24 @@ input {
   -webkit-appearance: none;
 }
 
-input:not(:last-child) {
+.label-text {
+  font-size: 1.2rem;
+  color: #22292f;
+}
+
+label {
+  display: flex;
+  margin-top: 0.5rem;
+  flex-direction: column;
+}
+
+label:not(:last-child) {
   margin-right: 5rem;
+  transform: translateX(4rem;);
+}
+
+@media only screen and (max-width: 425px) {
+  .search-container {
+    flex-direction: column;
+  }
 }
