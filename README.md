@@ -12,7 +12,7 @@ Finds restaurants in a given city.
 
 2. The nullish coalescing operator. This returns the left-hand side operand if it is not `null` or `undefined`. Example: `const foo = null ?? "default value";`
 
-3. One way to track down performance issues is to use a profiler. There are profilers built in to the dev tools of both Chrome and Firefox browsers, as well as the React Developer Tools plugin. If the performance issue was introduced in an unknown commit, a `git bisect` operation can be conducted to discover when it was introduced. I have had to use this method in production when working on a frontend touchscreen application for a medical imaging device.
+3. One way to track down performance issues is to use a profiler. There are profilers built in to the dev tools of both Chrome and Firefox browsers, as well as the React Developer Tools plugin. If the performance issue was introduced in an unknown commit, a `git bisect` operation can be conducted to discover its origin. I have had to use this method in production when working on a frontend touchscreen application for a medical imaging device.
 
 4. The endpoint as utilized is delivering a large payload that mostly goes unused. I would look into how this could be improved to only fetch the data relevant to the application.
 
