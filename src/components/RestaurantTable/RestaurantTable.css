@@ -1,9 +1,3 @@
-/* .table-container {
-  height: 80%;
-  width: 100%;
-  overflow: auto;
-} */
-
 .restaurant-table {
   display: inline-block;
   overflow-y: auto;
