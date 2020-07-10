@@ -4,15 +4,35 @@ exports[`renders <Search /> properly 1`] = `
 <div
   className="search-container"
 >
-  <input
-    onChange={[Function]}
-    placeholder="City"
-    type="text"
-  />
-  <input
-    onChange={[Function]}
-    placeholder="Refine"
-    type="text"
-  />
+  <label
+    htmlFor="city"
+  >
+    <span
+      className="label-text"
+    >
+      City
+    </span>
+    <input
+      className="search-input"
+      id="city"
+      onChange={[Function]}
+      type="text"
+    />
+  </label>
+  <label
+    htmlFor="refine-text"
+  >
+    <span
+      className="label-text"
+    >
+      Refine
+    </span>
+    <input
+      className="search-input"
+      id="refine-text"
+      onChange={[Function]}
+      type="text"
+    />
+  </label>
 </div>
 `;
