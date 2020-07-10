@@ -32,6 +32,7 @@ body {
   width: 100%;
   margin-top: 2rem;
   height: 50rem;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 1000px) {
