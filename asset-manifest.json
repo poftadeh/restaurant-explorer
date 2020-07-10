@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/restaurant-explorer/static/css/main.c6d7f418.chunk.css",
+    "main.css": "/restaurant-explorer/static/css/main.c0fd9ef9.chunk.css",
     "main.js": "/restaurant-explorer/static/js/main.b4b5ab9f.chunk.js",
     "main.js.map": "/restaurant-explorer/static/js/main.b4b5ab9f.chunk.js.map",
     "runtime-main.js": "/restaurant-explorer/static/js/runtime-main.6e989153.js",
@@ -9,10 +9,10 @@
     "static/js/2.37896c8f.chunk.js": "/restaurant-explorer/static/js/2.37896c8f.chunk.js",
     "static/js/2.37896c8f.chunk.js.map": "/restaurant-explorer/static/js/2.37896c8f.chunk.js.map",
     "index.html": "/restaurant-explorer/index.html",
-    "precache-manifest.36545e87debac6e8b0783a9378e79dfc.js": "/restaurant-explorer/precache-manifest.36545e87debac6e8b0783a9378e79dfc.js",
+    "precache-manifest.f3bd456b2aa0d3efd054525871e08bd3.js": "/restaurant-explorer/precache-manifest.f3bd456b2aa0d3efd054525871e08bd3.js",
     "service-worker.js": "/restaurant-explorer/service-worker.js",
     "static/css/2.e82dc18f.chunk.css.map": "/restaurant-explorer/static/css/2.e82dc18f.chunk.css.map",
-    "static/css/main.c6d7f418.chunk.css.map": "/restaurant-explorer/static/css/main.c6d7f418.chunk.css.map",
+    "static/css/main.c0fd9ef9.chunk.css.map": "/restaurant-explorer/static/css/main.c0fd9ef9.chunk.css.map",
     "static/js/2.37896c8f.chunk.js.LICENSE.txt": "/restaurant-explorer/static/js/2.37896c8f.chunk.js.LICENSE.txt",
     "static/media/food.svg": "/restaurant-explorer/static/media/food.e669dac1.svg",
     "static/media/no-data.svg": "/restaurant-explorer/static/media/no-data.cb61ac4f.svg",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.6e989153.js",
     "static/css/2.e82dc18f.chunk.css",
     "static/js/2.37896c8f.chunk.js",
-    "static/css/main.c6d7f418.chunk.css",
+    "static/css/main.c0fd9ef9.chunk.css",
     "static/js/main.b4b5ab9f.chunk.js"
   ]
 }
